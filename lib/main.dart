@@ -78,9 +78,7 @@ class InstagramProfile extends StatelessWidget {
                       bottom: 0,
                       right: 0,
                       child: Container(
-                        padding: const EdgeInsets.all(
-                          3,
-                        ), // The black "Instagram gap"
+                        padding: const EdgeInsets.all(3),
                         decoration: const BoxDecoration(
                           color: Colors.black,
                           shape: BoxShape.circle,
@@ -144,6 +142,26 @@ class InstagramProfile extends StatelessWidget {
               ],
             ),
             SizedBox(height: 16),
+
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(left: 50),
+                  child: Column(
+                    children: [
+                      Text(
+                        "Bhrenz Cahrlwheng Banaag",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 16),
+
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
 
@@ -154,7 +172,7 @@ class InstagramProfile extends StatelessWidget {
                     children: [
                       Text(
                         "Julliet loml",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white70),
                       ),
                     ],
                   ),
